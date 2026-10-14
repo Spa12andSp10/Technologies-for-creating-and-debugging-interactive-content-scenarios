@@ -1,0 +1,15 @@
+{
+    "require": {
+        "symfony/mailer": "^8.1",
+        "symfony/mime": "^8.1",
+        "guzzlehttp/guzzle": "^8.2",
+        "doctrine/orm": "^3.7",
+        "symfony/cache": "^8.1",
+        "aws/aws-sdk-php": "^3.401",
+        "league/oauth2-google": "^5.0",
+        "symfony/serializer": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.4"
+    }
+}
