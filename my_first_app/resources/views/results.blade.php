@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Результаты</title>
+@extends('layouts.app')
 
+@section('title', 'Результаты')
+
+@push('styles')
     @vite('resources/css/results.css')
-</head>
-<body>
+@endpush
 
+@section('content')
     <h1>Все отправленные формы</h1>
-    <a href="/form">Вернуться к форме</a>
+    <a href="{{ url('/form') }}" class="btn btn-secondary">Вернуться к форме</a>
 
     @if(count($forms) > 0)
         <table>
@@ -38,6 +36,4 @@
     @else
         <p>Пока нет ни одной сохраненной заявки.</p>
     @endif
-
-</body>
-</html>
+@endsection

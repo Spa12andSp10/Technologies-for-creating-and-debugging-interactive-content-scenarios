@@ -6,6 +6,37 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #1e293b;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+header a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header a:hover {
+    background-color: #2563eb;
+    color: #ffffff;
 }
 
 button {
@@ -16,8 +47,29 @@ button {
     border-radius: 6px;
     cursor: pointer;
     font-size: 14pt;
+    transition: background-color 0.2s ease;
 }
 
-.name{
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.name {
     font-size: 24pt;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    text-align: center;
+    color: #64748b;
+    font-size: 11pt;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
 }

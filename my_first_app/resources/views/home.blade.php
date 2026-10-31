@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Домашняя страница</title>
+@section('title', 'Домашняя страница')
 
-        @vite('resources/css/home.css')
-    </head>
-    <body>
-        <p class="name">Laravel: Начало</p>
-        <a href="form">
-            <button type="button">Перейти к форме</button>
-        </a>
-    </body>
-</html>
+@section('content')
+    <h1 class="name">Laravel: Начало</h1>
+    <p class="subtitle">Демонстрационное приложение: форма, валидация и сохранение заявок в JSON.</p>
+
+    <div class="actions">
+        <a href="{{ url('/form') }}" class="btn">Перейти к форме</a>
+        <a href="{{ url('/results') }}" class="btn btn-secondary">Перейти к заявкам</a>
+    </div>
+@endsection
